@@ -8,14 +8,18 @@ Prerequisites
 
 Packages used
 ====
-* flask - web framework for building web services
-* tensorflow - for loading and running model files
-* ResNet50 - to instantiate the ResNet50 architecture & create a pretrained model
+* `flask` - web framework for building web services
+* `tensorflow` - for loading and running model files
+* `ResNet50` - to instantiate the ResNet50 architecture & create a pretrained model
 
 ##### **tf.keras.applications.resnet50** module has 2 additional functions
 
 * `decode_predictions()`: Decodes the prediction of an ImageNet model.
 * `preprocess_input()`: Preprocesses a tensor or Numpy array encoding a batch of images.
+
+System flow
+====
+![API overview](images/MLApi.png)
 
 Building the API
 =====
