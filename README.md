@@ -10,10 +10,16 @@ Packages used
 ====
 * `flask` - web framework for building web services
 * `tensorflow` - for loading and running model files
-* `ResNet50` - to instantiate the ResNet50 architecture & create a pretrained model
+* `xgboost` - for loading an XGBOOST model
+* `ResNet50` - to instantiate the ResNet50 architecture & create a pretrained ResNet model
+
+Current challenge
+====
+* The original plan was to load a pretrained `Regression model` built using xgboost + logistic regression for predicting what amount will a user regularly checkout within app if user is shown a particular app as an ad
+* However, running into xgb model load issues while serving through API. So, decided to load a sample pretrained `ResNet50` model for predicting probability of objects within images.
+
 
 ##### **tf.keras.applications.resnet50** module has 2 additional functions
-
 * `decode_predictions()`: Decodes the prediction of an ImageNet model.
 * `preprocess_input()`: Preprocesses a tensor or Numpy array encoding a batch of images.
 

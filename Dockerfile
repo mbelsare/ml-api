@@ -1,6 +1,9 @@
 FROM python:3.9
 LABEL authors="mbelsare"
 
+RUN mkdir /models
+COPY models/model.json /models
+
 WORKDIR /app
 
 COPY requirements.txt ./
